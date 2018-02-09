@@ -1,0 +1,106 @@
+.box1{
+	width: 10rem;
+	height: 4rem;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	p{
+		color:red;
+		font-size: 0.5rem;
+		float: left;
+		width: 3.33rem;
+		line-height: 4rem;
+		border: 1px solid red;
+		box-sizing: border-box;
+	}
+	img{
+		width: 100%;
+	}
+}
+.imgt{
+    background: #cccccc;
+    height: 50px;
+    vertical-align: middle;
+    input{
+        margin: 0;
+    }
+    span{
+        font-size: 12px;
+    }
+}
+ul{
+    display: flex;
+    list-style: none;
+    border:1px solid #ccc;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+    //控制Flex项目沿着主轴（Main Axis）即X轴的排列方向 四个属性值  row x轴方向|| column y轴方向|| row-reverse x轴方向反向排列|| column-reverse y轴方向反向排列;
+    //默认为row
+    flex-direction: column;
+    //Flex容器内的Flex项目是否换行排列   四个属性值 wrap 换行 || nowrap 不换行|| wrap-reverse 换行反向排列;
+    //默认nowarp 不换行
+    flex-wrap: wrap;
+    //flex-flow: flex-direction和flex-wrap两个属性的速记属性
+    flex-flow:row nowrap;
+    //justify-content属性主要定义了Flex项目在Main-Axis上 即X轴的排列方向 的对齐方式
+    //justify-content: flex-start 从最左往右|| flex-end 从最右往左|| center 居中对齐|| space-between 两端对齐|| space-around 每个flex具有相同空间
+    justify-content:space-around;
+    //align-items 定义Y轴方向的对齐方式
+    //flex-start 从顶部往底部对齐|| flex-end 从底部往顶部对齐|| center 垂直居中对齐|| stretch 让所有的Flex项目高度和Flex容器高度一致|| baseline 基线对齐
+    //默认为stretch flex项目与flex容器高度一致
+    align-items:flex-start;
+    
+    //flex项目对齐属性
+    li{
+        font-size: 12px;
+        background: pink;
+//      line-height: 50px;
+        margin: 10px;
+        height: 60px;
+//      width: 60px;
+    }
+    //order值 控制排序 在不改变html代码情况下 从小到大排序 数值相同则根据html代码位置排序
+    
+    //flex-grow:0 或者大于0的数  默认0; flex-shrink :0 或者大于0的数 默认0;
+    //属性控制Flex项目在容器有多余的空间如何放大（扩展），在没有额外空间又如何缩小。
+    
+    //flex-basis属性可以指定Flex项目的初始大小。单位可以为  % || em || rem || px
+    //默认状态flex-basis:auto;
+    
+    //flex属性相当于 :flex-grow flex-shrink flex-basis;三个属性的结合快速写法
+    //flex: 0 0 auto;
+    //------------flex:auto;相当于flex:1 1 auto;
+    //align-self 控制自身Y轴方向对齐方式   auto || flex-start || flex-end || center || baseline || stretch
+    
+    //margin: auto 时，值为 auto 的方向（左、右或者二者都是）会占据所有剩余空间。
+    .li1{
+        order: 6;
+//      flex-grow:3;
+//      flex-shrink :10;
+        flex-basis:300px;
+    }
+    .li2{
+        order: 5;
+//      flex-grow:1;
+//      flex-shrink :10;
+        flex-basis:200px;
+        align-self:flex-end;
+    }
+    .li3{
+        order: 3;
+//      flex-grow:1;
+//      flex-shrink :10;
+        flex-basis:100px;
+    }
+}
+//video
+.videoTest{
+    width: 100%;
+    height: 300px;
+    border: 1px solid #cfcfcf;
+    video{
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+    }
+}

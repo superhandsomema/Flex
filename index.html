@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>less</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<!--<div class='box1'>
+		<p>less 应用1</p>
+		<p>less 应用2</p>
+		<p>less 应用3</p>
+	</div>-->
+	<!--<div class='imgt'>
+		<input type="checkbox" name="" id="" value="弄好 " /><span>你好</span>
+	</div>-->
+	<!--<div class="box1">
+		<img src="test.jpg" alt="">
+	</div>-->
+	<ul>
+		<li class='li1'>flex-content1</li>
+		<li class='li2'>flex-content2</li>
+		<li class='li3'>flex-content3</li>
+	</ul>
+	<div class="videoTest">
+		<video id='video' width="200">
+			<source webkit-playsinline='' playsinline='' x-webkit-airplay=''  src="https://uim.xiyouence.com/apkspread/template/201801/18113649/img/video01.mp4" type="video/mp4"></source>
+		</video>
+		<button id='start'>开始</button>
+	</div>
+	<script>
+//	pushHistory();
+//  function pushHistory() {
+//      var state = {
+//          title: "title",
+//          url: "#"
+//      };
+//      window.history.pushState(state, "title", "#")
+//  }
+//  window.onpopstate=function(){
+//  	alert(1)
+//  }
+
+	//自动播放mp4
+	var video = document.getElementById('video')
+	console.log(video)
+	var start = document.getElementById('start')
+	start.onclick=function(){
+		video.play()
+	}
+	</script>	
+</body>
+</html>
